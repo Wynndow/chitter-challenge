@@ -1,13 +1,28 @@
-This is my solution to the Makers Academy Chitter challenge.
+##Chitter Challenge
 
-It uses Datamapper to manage a PostgreSQL database, Sinatra as a framework and bcrypt to secure the passwords.
-For testing we're using RSpec, Capybara, Timecop and databasecleaner.
+#### About
 
-To install, simply clone this repo and then run ```$ Bundle``` from the command line to install all required gem's. You will need to set up two databases with PostgreSQL, one called 'chitter_test' and another called 'chitter_development'. Finally, from the command line use the included Rakefile to generate the tables required using ```$ rake db:auto_migrate```.
+The weekend challenge for week 4 of Makers Academy was to create a clone of Twitter called 'Chitter'. This was done using Sinatra and test driven using RSpec and Capybara. Users can sign up, log in, post peeps (tweets), leave comments on other peeps.
 
-To start the app run ```Rackup``` and then visit localhost:9292. To run the tests, simply run ```$ rspec```.
+#### Installation
 
-Thanks
+0. Clone this repo using `git@github.com:Wynndow/chitter-challenge.gitt`
+0. Move into the new directory using `$ cd chitter-challenge`
+0. Install dependencies using `$ bundle`
+0. Create a development database with PostgreSQL called `chitter_development`
+0. Migrate databases using `$ rake db:auto_migrate`
+
+#### Usage
+
+0. Start the server using `$ rackup`
+0. Navigate to `http://localhost:9292/`
+
+#### Running tests
+
+0. Ensure a PostgreSQL database exists called `chitter_test` and migrations have been run on it.
+0. Tests are run from the command line using ```$ rspec```
+
+## Original challenge instructions
 
 Chitter Challenge
 =================
